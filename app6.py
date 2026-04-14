@@ -253,6 +253,7 @@ st.markdown(f"""
 
 # 5. 로직 실행
 if st.session_state.winner and not st.session_state.is_spinning:
+    st.balloons()
     # --- [결과 화면] ---
     placeholder.markdown(f"""
     <div class="roulette-container">
@@ -260,13 +261,27 @@ if st.session_state.winner and not st.session_state.is_spinning:
         <img src="data:image/png;base64,{img_base64}" class="roulette-img" style="transform: rotate({st.session_state.target_angle}deg);" />
     </div>
     """, unsafe_allow_html=True)
-    
     st.markdown(f"""
-        <div class="result-box">
-            <h2 style="color: #555;">오늘의 추천 메뉴는?</h2>
-            <h1 style="font-size: 85px; color: #FF4B4B; margin: 10px 0;">{st.session_state.winner}</h1>
+        <div id="result-section" class="result-box" style="text-align: center; padding: 30px; border-radius: 15px; background-color: #f0f2f6; border: 2px solid #FF4B4B; margin-top: 20px;">
+            <h2 style="color: #555; margin-bottom: 0;">오늘의 추천 메뉴는?</h2>
+            <h1 style="font-size: 85px; color: #FF4B4B; margin: 10px 0; font-weight: bold;">{st.session_state.winner}</h1>
         </div>
     """, unsafe_allow_html=True)
+    st.components.v1.html(
+        f"""
+        <script>
+            function scrollToResult() {{
+                const el = window.parent.document.getElementById("result-section");
+                if (el) {{
+                    el.scrollIntoView({{behavior: "smooth", block: "center"}});
+                }}
+            }}
+            // 페이지 렌더링 후 약간의 시차를 두고 실행
+            setTimeout(scrollToResult, 1000);
+        </script>
+        """,
+        height=0,
+    )
     
     st.write("---")
     st.subheader("📍 근처 식당 바로 찾기")
@@ -346,9 +361,9 @@ else:
 if st.session_state.is_spinning:
     time.sleep(3) # 애니메이션 시간과 동일하게
     st.session_state.is_spinning = False
-    st.balloons()
-    time.sleep(1.0)
     st.rerun()
+
+
 
 
 # --- [관리자 전용 대시보드 함수] ---
