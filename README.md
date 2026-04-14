@@ -17,14 +17,14 @@
 
 ✨ Key Features
 1. Interactive Decision Support
-- Base64 Roulette UI: 무중단 이미지 스트리밍으로 실제 룰렛과 동일한 물리적 회전 경험 제공.
-- Map Integration: 당첨 메뉴 확정 후 네이버/카카오 지도 API를 통한 실시간 주변 식당 큐레이션.
+    - Base64 Roulette UI: 무중단 이미지 스트리밍으로 실제 룰렛과 동일한 물리적 회전 경험 제공.
+    - Map Integration: 당첨 메뉴 확정 후 네이버/카카오 지도 API를 통한 실시간 주변 식당 큐레이션.
 
 2. Advanced Admin Dashboard (Admin Only)
-- Real-time Log Monitoring: Google Sheets와 연동된 실시간 접속 로그 트래킹 및 검색/필터링 기능.
-- Activity Heatmap: 요일/시간대별 접속 패턴을 히트맵으로 시각화하여 사용자가 가장 배고픈 골든 타임(Golden Time) 분석.
-- Retention Dashboard: * Daily Cohort: 신규 방문자 대비 재방문자의 비율을 히트맵 형식으로 산출.
-- Popularity Analytics: 당첨 빈도 상위 메뉴 데이터 시각화로 점심 트렌드 파악.
+    - Real-time Log Monitoring: Google Sheets와 연동된 실시간 접속 로그 트래킹 및 검색/필터링 기능.
+    - Activity Heatmap: 요일/시간대별 접속 패턴을 히트맵으로 시각화하여 사용자가 가장 배고픈 골든 타임(Golden Time) 분석.
+    - Retention Dashboard: * Daily Cohort: 신규 방문자 대비 재방문자의 비율을 히트맵 형식으로 산출.
+    - Popularity Analytics: 당첨 빈도 상위 메뉴 데이터 시각화로 점심 트렌드 파악.
 
 # Dev Log: High-Level Engineering
 🔒 Stealth & Security
@@ -42,8 +42,8 @@
 
 # Quick Start
 1. 저장소 복제 및 라이브러리 설치
-git clone https://github.com/YourName/Lunch-Roulette.git
-pip install -r requirements.txt
+ - git clone https://github.com/YourName/Lunch-Roulette.git
+ - pip install -r requirements.txt
 
 2. 접근 방법
-streamlit run app6.py
+ - streamlit run app6.py
