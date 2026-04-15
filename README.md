@@ -1,4 +1,4 @@
-# Real-Spinning Lunch Roulette: Decision-Making & Analytics Platform
+# Real-Spinning Lunch Roulette:
 🍱 우리 뭐 먹지? 진짜 도는 런치룰렛
 - 본 프로젝트는 룰렛 돌리기와 실시간 유저 행동 데이터 분석 시스템을 결합한 통합 솔루션입니다.
     - 유저들에게는 쉽고 재밌는 선택 경험을 제공, 관리자에겐 수집된 데이터로 또 다른 가치를 제공하는 지능형 대시보드.
