@@ -37,7 +37,7 @@
 🌍 Geolocation Mapping
 - IP 기반 위치 정보 수집 시 발생할 수 있는 Latency를 최소화하기 위해 비동기 처리 및 예외 처리 로직을 강화하여, 분석 페이지 로딩 속도를 유지하면서도 정확한 지리적 분포도를 구현했습니다.
 
-👨‍💻 Developer: Dave
+👨‍💻 Developer & Product Manager: Dave
 - Focus: 재미기반 유저의 효율적인 의사결정 프로세스 및 유저 데이터 실시간 대쉬보드 구현.
 - Philosophy: "이용 할 수록 데이터가 쌓이고 이는 더 많은 가치 창출에 기여한다."
 
